@@ -12,17 +12,21 @@ custom_js:
 
 # License Data Analysis
 
-## Visualization 1: Distribution
+## Visualization 1: Distribution of Values
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/licenses_chart1.json" style="width: 100%"></vegachart>
 
-This visualization shows the distribution of values using a histogram with binned quantitative encoding on the x-axis and count on the y-axis. Data was cleaned by selecting relevant columns and removing missing values using dropna().
+This visualization displays the distribution of square footage values using a histogram. The x-axis uses a **quantitative encoding** with binning applied to group values into ranges, while the y-axis represents the **count of records**. Color is used as a **nominal encoding** to distinguish between different usage categories, allowing for comparison across groups. A categorical color scheme was chosen since the usage variable is discrete and unordered.
+
+The dataset was preprocessed by selecting relevant columns and removing missing values using `dropna()`. Binning was applied to reduce clutter and improve readability, especially given the wide range of square footage values.
 
 ## Visualization 2: Interactive Dropdown Filter
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/licenses_chart2.json" style="width: 100%"></vegachart>
 
-This visualization uses a dropdown filter to allow users to select categories dynamically. The x-axis encodes time while the y-axis shows counts. This interactivity makes it easier to isolate patterns without clutter.
+This visualization shows how building counts change over time using an interactive dropdown filter. The x-axis uses a **quantitative encoding** for year, while the y-axis represents the **count of buildings**. Instead of displaying all categories at once, a dropdown selection allows the user to filter by usage type.
+
+This interactivity improves clarity by reducing visual clutter and enabling focused analysis of individual categories. It allows users to explore trends over time for specific building types without distraction from overlapping data.
 
 ## Search The Data & Methods
 
