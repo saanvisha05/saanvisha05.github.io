@@ -16,17 +16,17 @@ custom_js:
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/licenses_chart1.json" style="width: 100%"></vegachart>
 
-This visualization displays the distribution of square footage values using a histogram. The x-axis uses a **quantitative encoding** with binning applied to group values into ranges, while the y-axis represents the **count of records**. Color is used as a **nominal encoding** to distinguish between different usage categories, allowing for comparison across groups. A categorical color scheme was chosen since the usage variable is discrete and unordered.
+This chart shows how square footage is distributed across buildings using a histogram. The x axis represents square footage and is grouped into bins so the values are easier to read. The y axis shows how many buildings fall into each range. Color is used to separate the different usage categories so it is easier to compare how building sizes vary across them.
 
-The dataset was preprocessed by selecting relevant columns and removing missing values using `dropna()`. Binning was applied to reduce clutter and improve readability, especially given the wide range of square footage values.
+Before making the chart, I filtered the dataset to only include the columns I needed and removed missing values using dropna(). I also used binning because the raw values were too spread out and hard to interpret without grouping them.
 
 ## Visualization 2: Interactive Dropdown Filter
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/licenses_chart2.json" style="width: 100%"></vegachart>
 
-This visualization shows how building counts change over time using an interactive dropdown filter. The x-axis uses a **quantitative encoding** for year, while the y-axis represents the **count of buildings**. Instead of displaying all categories at once, a dropdown selection allows the user to filter by usage type.
+This chart shows how the number of buildings changes over time and includes a dropdown that lets the user filter by usage type. The x axis represents the year and the y axis shows the count of buildings. Instead of displaying all categories at once, the dropdown lets the user focus on one category at a time.
 
-This interactivity improves clarity by reducing visual clutter and enabling focused analysis of individual categories. It allows users to explore trends over time for specific building types without distraction from overlapping data.
+This makes the chart easier to understand because it removes clutter and helps highlight trends for specific types of buildings. The interactivity allows users to explore the data in a more focused way instead of looking at everything at once.
 
 ## Search The Data & Methods
 
