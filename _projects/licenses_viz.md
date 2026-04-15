@@ -16,13 +16,13 @@ custom_js:
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/licenses_chart1.json" style="width: 100%"></vegachart>
 
-This visualization shows the distribution of the selected variable using a histogram. The X-axis uses a quantitative encoding with binning applied to group values into ranges, while the Y-axis represents the count of records. Color is used to distinguish categorical groupings, allowing comparison across different categories. The dataset was preprocessed by selecting relevant columns and removing missing values using dropna().
+This visualization shows the distribution of values using a histogram with binned quantitative encoding on the x-axis and count on the y-axis. Data was cleaned by selecting relevant columns and removing missing values using dropna().
 
 ## Visualization 2: Interactive Dropdown Filter
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/licenses_chart2.json" style="width: 100%"></vegachart>
 
-This chart displays how values change over time, with an interactive dropdown that allows users to filter the data by category. The X-axis uses a quantitative encoding for time, while the Y-axis shows counts. The dropdown interactivity allows users to isolate specific categories, making it easier to explore patterns without visual clutter. This improves clarity compared to displaying all categories simultaneously.
+This visualization uses a dropdown filter to allow users to select categories dynamically. The x-axis encodes time while the y-axis shows counts. This interactivity makes it easier to isolate patterns without clutter.
 
 ## Search The Data & Methods
 
@@ -31,5 +31,5 @@ This chart displays how values change over time, with an interactive dropdown th
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/saanvisha05/saanvisha05.github.io/blob/main/python_notebooks/YOUR_NOTEBOOK_NAME.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/saanvisha05/saanvisha05.github.io/blob/main/python_notebooks/445Proj.ipynb" text="The Analysis" %}
 </div>
